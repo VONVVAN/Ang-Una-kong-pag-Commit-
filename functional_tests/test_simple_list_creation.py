@@ -31,7 +31,7 @@ class NewVisitorTest(FunctionalTest):
 
 		# There is still a text box inviting her to add another item. She
 		# enters "Use peacock feathers to make a fly" (Edith is very methodical)
-		inputbox = self.browser.find_element_by_id('id_new_item')
+		inputbox = self.browser.find_element_by_id('id_text') #eto yun
 		inputbox.send_keys('Use peacock feathers to make a fly')
 		inputbox.send_keys(Keys.ENTER)
 		
@@ -56,7 +56,7 @@ class NewVisitorTest(FunctionalTest):
 
 		# Francis starts a new list by entering a new item. He
 		# is less interesting than Edit...
-		inputbox = self.browser.find_element_by_id('id_new_item')
+		inputbox = self.browser.find_element_by_id('id_text')
 		inputbox.send_keys('Buy milk')
 		inputbox.send_keys(Keys.ENTER)
 
